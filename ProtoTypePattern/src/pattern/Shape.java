@@ -2,7 +2,7 @@ package pattern;
 public abstract class Shape implements Cloneable{
 	private String id;
 	
-	abstract void draw();
+	public abstract void draw();
 	
 	public abstract String getType();
 	
