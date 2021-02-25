@@ -1,0 +1,32 @@
+过滤器模式允许开发人员使用不同标准来过滤一组对象, 通过逻辑运算解耦的方式把它们连接起来, 结合多个标准来获得单一标准
+
+
+											<<Interface>> 
+											  Criteria
+										+meetCriteria(List<Person> raw): List<Person> 
+												|
+		------------------------------------------------------------------------------------------------------------				
+		|								|										|									|
+		|implements						|										|	implements						|
+		|								|										|									|
+CriteriaFemale					CriteriaMale								AndCriteria								OrCriteria
++meetCriteria(): List<Person> +meetCriteria(): List<Person> 			-criteria: Criteria						-criteria: Criteria
+						|												-otherCriteria: Criteria				-otherCriteria: Criteria
+				CriteriaSingle											+AndCriteria()							+OrCriteria() 	
+			+meetCriteria(): List<Person>								+meetCriteria(): List<Person> 			+meetCriteria(): List<Person> 
+		|																
+		|																											|
+		|									use																		|
+		-------------------------------------------------------------------------------------------------------------																
+		|
+		|
+		|
+		|
+	CriteriaPatternDemo        --------------------------------->            Person
+	+main(): void														-name: String
+																		-gender: String
+																		-status: String
+																		+Person();
+																		+getAge(): String
+																		+getGender(): String
+																		+getStatus(): String
