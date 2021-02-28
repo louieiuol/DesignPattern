@@ -38,7 +38,7 @@
 		-square: Shape				------->   				Shape
 		+ShapeMaker()			      创建				+draw(): void
 		+drawCircle(): void									|
-		+drawRectanle(): void								|
+		+drawRectangle(): void								|
 		+drawSquare(): void									|
 				|								-------------------------
 				|								|			|			|
