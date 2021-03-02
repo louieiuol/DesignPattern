@@ -4,8 +4,6 @@ package pattern;
 //是lazy初始化
 //是线程安全
 //效率很低
-
-
 public class SingleObjectLazyLock {
 	private static SingleObjectLazyLock instance;
 	private static int count;

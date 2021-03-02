@@ -4,8 +4,6 @@ package pattern;
 //是lazy初始化 
 //否多线程安全
 //没有加锁, 不能多线程
-
-
 public class SingleObjectLazy {
 	private static SingleObjectLazy instance;
 	private static int count;
