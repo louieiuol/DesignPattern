@@ -35,6 +35,10 @@
 1. 没有接口, 不能继承
 2. 与单一指责原则冲突
 
+实现:
+SingleObject类有它的私有构造函数和本身的一个静态实例
+SingleObject类提供一个静态方法, 供外界获取它的静态实例, SingletonPatternDemo类使用SingleObject类来获取SingleObject对象
+
 SingletonPatternDemo
 	+main(): void
 		|

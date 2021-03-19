@@ -4,9 +4,7 @@ public class Stock {
 	private static final String name = "ABC";
 	private static final int quantity = 10 ;
 	
-	public Stock() {
-		
-	}
+	public Stock() {}
 	
 	public void buy() {
 		System.out.println("buy stock: "+ name + ", quantity: "+ quantity);

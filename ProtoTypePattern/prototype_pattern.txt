@@ -55,6 +55,11 @@
 原型是浅拷贝
 
 
+实现:
+将创建一个抽象类Shape 和 扩展Shape的实体类
+定义类ShapeCache,该类把对象存储在一个Hashtable中, 并在请求时候返回它们的克隆
+PrototypePatternDemo类使用shapeCache类来获取Shape对象
+
 
 						------------ Cloneable
 						| implements

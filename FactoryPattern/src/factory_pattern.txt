@@ -30,6 +30,11 @@
 
 实现
 
+Shape接口, Shape接口实体类, 下一步是定义工厂类ShapeFactory
+
+FactoryPatternDemo类使用ShapeFactory来获取 Shape对象, 它向ShapeFactory传递信息(CIRCLE/RECTANGLE/SQUARE), 以便获取它所需的对象类型
+
+
 										<<interface>>
 											Shape					<-------------------------------    ShapeFactory
 										+draw(): void							创建工厂                 +getShape(): Shape

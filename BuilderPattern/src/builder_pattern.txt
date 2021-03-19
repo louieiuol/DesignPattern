@@ -31,6 +31,10 @@
 
 实例: 
 
+事物条目Item接口和实现Item接口的实体类, 以及一个表示事物包装的Packing接口和实现Packing接口的实体类
+Meal类带有Item的ArrayList和一个通过结合Item来创建不同类型Meal对象的MealBuilder
+BuilderPatternDemo使用MealBuilder来创建一个Meal
+
 
 Item									Meal 							MealBuilder
 								-items: ArrayList<Item>				
