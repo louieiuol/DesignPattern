@@ -41,6 +41,12 @@ Handler里面聚合它自己, 在HandlerRequest里判断是否合适, 如果没�
 3.可动态指定一组对象处理请求
 
 实现:
+
+创建抽象类AbstractLogger, 带有详细的日志记录级别.
+创建三种类型的记录器, 都extendsAbstractLogger.
+每个记录器消息的级别是否属于自己的级别, 如果是打印消息, 如果不是传递给下一个记录器 
+
+
 			<<abstract class>>
 			  AbstractLogger
 			  INFO: int								ChainPatternDemo

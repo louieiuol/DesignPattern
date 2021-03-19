@@ -23,6 +23,15 @@ Java中的iterator
 
 缺点:
 增加了系统的复杂性
+
+实现:
+
+叙述导航方法的Iterator接口
+一个返回迭代器的Container接口
+实现了Container接口的实体类将负责实现Iterator接口
+IteratorPatternDemo演示类使用NamesRepository来打印NamesRepository中储存为集合的Names
+
+
 																						<<interface>>
 											<<Interface>>          						Iterator
 											  Container									+hasNext(): boolean

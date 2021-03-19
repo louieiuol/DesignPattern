@@ -44,6 +44,15 @@ StrategyPattenDemo演示类
 演示类使用Context和策略对象来演示Context在它所配置或使用的策略改变时的行为变化
 
 
+实现:
+
+创建一个定义活动的Strategy接口和实现了Strategy接口的实体策略类
+Context是一个使用某种策略的类
+StrategyPatternDemo演示类使用Context和策略对象来演示Context在它所配置或使用的策略改变时的行为变化
+
+
+
+
 			<<interface>>				uses				Context							asks		StrategyPatternDemo
 			  Strategy			<-----------------------	-strategy: Strategy 		<--------------		+main(): void
 			+doOperation(): int								+Context(Strategy strategy):

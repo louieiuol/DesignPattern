@@ -54,6 +54,14 @@ Client -----> Receiver <------- ConcreteCommand
 			  
 实现:				
 
+命令接口Order
+创建作为请求的Stock类
+实体命令类BuyStock和SellStock, 实现Order接口, 将执行的实际命令处理
+创建作为调用对象的类Broker, 能接受订单并能下订单
+broker对象使用命令模式, 基于命令类型确定哪个对象执行哪个命令
+CommandPatternDemo类使用Broker类来演示命令模式
+ 
+
 
 	作为请求的类												   调用对象类	
 	 Stock 														Broket

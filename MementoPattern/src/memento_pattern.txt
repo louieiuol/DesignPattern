@@ -33,6 +33,14 @@
 2.为了节约内存, 可使用原型+备忘录模式
 
 
+实现:
+
+备忘录模式使用三个类Memento, Originator 和 CareTaker
+Memento包含要被恢复的对象的状态
+Originator创建并在Memento对象中存储状态
+CareTaker对象负责从Memento中恢复对象的状态
+MementoPatternDemo演示类使用CareTaker和Originator对象显示对象的状态恢复
+
 					   uses										
 MementoPatternDemo ------------>   Originator				----------------->    Memento            
 +main(): void					 -state:String									-state: String

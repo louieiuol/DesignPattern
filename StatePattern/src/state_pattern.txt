@@ -35,6 +35,12 @@
 注意:
 行为受状态约束的时候使用状态模式, 而且状态不超过5个
 
+
+实现:
+我们将创建一个State接口和实现了State接口的实体状态类
+Context是一个带有某个状态的类
+StatePatternDemo, 我们演示类使用Context和状态对象来演示Context在状态改变时的行为变化
+
 		
 			<<interface>>						uses			Context						|   	asks
 				State					<-----------------  	-state: State				|	<------------  StatePatternDemo

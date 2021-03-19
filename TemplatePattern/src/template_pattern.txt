@@ -39,6 +39,15 @@ Game抽象类定义操作
 Cricket和Football是扩展了Game的实体类, 它们重写了抽象类的方法
 演示类TemplatePatternDemo
 
+
+实现:
+
+创建一个定义操作的Game抽象类, 模版方法设置为final, 就不会被重写
+Cricket和Football是扩展了Game的实体类
+它们重写了抽象类的方法
+
+TemplatePatternDemo演示类使用Game来演示模版模式的用法
+
 					<<abstract>>					uses
 						Game					<-----------	TemplatePatternDemo
 					+initialize(): void								+main(): void

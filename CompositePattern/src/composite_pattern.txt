@@ -26,6 +26,12 @@
 
 注意事项: 定义时为具体类
 
+
+实现:
+
+Employee, 该类被当作组合模型类
+CompositePatternDemo类使用Employee类来添加部门层次结构, 并打印所有员工
+
 Employee 
 -name: String
 -dept: String 

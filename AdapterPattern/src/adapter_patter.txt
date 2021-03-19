@@ -35,7 +35,15 @@
 1. 过多的使用适配器, 系统非常凌乱
 2. Java 最多继承一个类, 所以至多只能适配一个适配者类, 而且目标必须是抽象类
 
-eg:
+实现:
+
+MediaPlayer接口
+AudioPlayer实现MediaPlayer接口的实体类
+AdvancedMediaPlayer接口
+AdvancedMediaPlayer接口的实体类
+MediaPlayer接口适配器MediaAdapter并使用AdvancedMediaPlayer对象来播放所需格式
+AudioPlayer使用适配器类MediaAdapter传递所需音频类型, 不需要知道能播放所需格式音频的实际类
+AdapterPatternDemo使用AudioPlayer类来播放各种格式
 
 
 已有接口: 

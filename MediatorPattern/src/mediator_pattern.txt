@@ -37,6 +37,10 @@
  
 实现:
 
+ChatRoom聊天室类
+User用户类, 使用ChatRoom来分享它们的消息
+MediatorPatternDemo演示类使用User对象来显示它们之间的通信
+
 
 						uses								uses
 MediatorPatternDemo  ------------->   User			    --------------> ChatRoom

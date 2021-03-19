@@ -34,6 +34,15 @@
 2. 避免循环引用
 3. 如果顺序执行, 某一观察者出错会导致系统卡住, 采用异步处理
 
+
+实现:
+观察者模式使用三个类Subject, Observer和Client. 
+Subject对象带有绑定观察者到Client对象和从Client对象解绑观察者的方法.
+我们创建Subject类, Observer抽象类和扩展了抽象类Observer的实体类
+ObserverPatternDemo演示类使用Subject和实体类对象来演示观察者模式
+
+
+
 	ObserverPatternDemo
 	+main(): void
 		|

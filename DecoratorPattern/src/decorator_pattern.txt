@@ -22,6 +22,14 @@
 
 注意事项: 可代替继承
 
+
+实现:
+
+Shape接口和Shape接口实体类
+抽象装饰类ShapeDecorator实现Shape, 并把Shape作为实例变量
+RedShapeDecorator是实现了ShapeDecorator的实体类
+DecoratorPatternDemo类使用RedShapeDecorator来装饰Shape对象
+
 			<<interface>> 						decorate			<<abstract>>			访问
 				Shape			<-------------------------------- ShapeDecorator     <------------------- DecoratorPatternDemo
 			+draw(): void 											-shape: Shape							 +main(): void

@@ -32,6 +32,13 @@
 注意事项:
 1. 在层次化结构中, 可以使用外观模式定义系统中每一层的入口
 
+实现:
+将创建一个Shape接口和实现了Shape接口的实体类
+定义一个外观类ShapeMaker
+ShapeMaker类使用实体类来代表用户对这些类的调用
+FacadePatternDemo类使用ShapeMaker类来显示结果
+
+
 			ShapeMaker
 		-circle: Shape
 		-rectangle: Shape								<<interface>>

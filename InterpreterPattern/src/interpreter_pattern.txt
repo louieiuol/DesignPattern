@@ -36,6 +36,11 @@
 
 实现:
 
+接口Expression和实现Expression接口的实体类
+定义作为上下文中主要解释器TerminalExpression类
+其他的类OrExpression和AndExpression用于创建组合表达式
+InterpreterPatternDemo演示类使用Expression类创建规则和演示表达式的解析
+
 
 						<<interface>>                              								InterpreterPatternDemo
 						Expression								uses							+getMaleExpression(): void
